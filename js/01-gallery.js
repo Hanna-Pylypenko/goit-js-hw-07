@@ -35,7 +35,7 @@ function onGalleryClick(event) {
 
   // galleryEl.addEventListener("keydown", (event) => {
   //   if (event.code === 27) {
-  //     // close modal here
+  //     
   //     instance.element().querySelector("img").onkeydown = instance.close;
   //   }
   // });
