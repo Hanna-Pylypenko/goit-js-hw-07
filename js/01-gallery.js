@@ -30,12 +30,14 @@ function onGalleryClick(event) {
   event.preventDefault();
   const largePicUrl = event.target.dataset.source;
   const instance = basicLightbox.create(` <img src="${largePicUrl}">`);
-
+  if (event.target.nodeName !== "IMG") {
+    return;
+  }
   instance.show();
 
   // galleryEl.addEventListener("keydown", (event) => {
   //   if (event.code === 27) {
-  //     
+  //
   //     instance.element().querySelector("img").onkeydown = instance.close;
   //   }
   // });
